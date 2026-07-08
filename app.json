@@ -28,13 +28,11 @@
         "backgroundColor": "#fdc500",
         "foregroundImage": "./assets/images/favicon.png"
       },
-
       "splash": {
         "resizeMode": "contain",
         "backgroundColor": "#fdc500",
         "image": "./assets/images/splash-icon.png"
       },
-
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "package": "com.SinaMadadi.Parachi",
@@ -42,9 +40,13 @@
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO",
         "android.permission.INTERNET",
-        "android.permission.MODIFY_AUDIO_SETTINGS"
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
       ],
-      "blockedPermissions": ["android.permission.SYSTEM_ALERT_WINDOW"]
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
     },
     "web": {
       "output": "static",
@@ -79,7 +81,9 @@
           "iCloudContainerEnvironment": "Production"
         }
       ],
-      ["expo-file-system"],
+      [
+        "expo-file-system"
+      ],
       [
         "expo-build-properties",
         {
@@ -90,7 +94,12 @@
             "compileSdkVersion": 35,
             "enableProguardInReleaseBuilds": true,
             "enableShrinkResourcesInReleaseBuilds": true,
-            "buildArchs": ["arm64-v8a", "armeabi-v7a", "x86", "x86_64"],
+            "buildArchs": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
             "enableMinifyInReleaseBuilds": true
           },
           "ios": {
@@ -106,9 +115,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "4b53b685-a2c1-46bd-8459-74aea8dbf077"
+        "projectId": "cca75d57-e5eb-45f0-80d5-41bd5437a715"
       }
     },
-    "owner": "sinamadadi"
+    "owner": "sinamadadii"
   }
 }
