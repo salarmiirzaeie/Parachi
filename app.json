@@ -15,8 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.salarmiirzapour.Parachi",
-      "deploymentTarget": "15.1",
+      "bundleIdentifier": "com.sinamadadi.Parachi",
       "infoPlist": {
         "NSCameraUsageDescription": "به برنامه اجازه دسترسی به دوربین را بدهید تا بتوانید عکس بگیرید و آپلود کنید.",
         "NSPhotoLibraryUsageDescription": "به برنامه اجازه دسترسی به عکس‌های شما را بدهید تا بتوانید فایل آپلود کنید.",
@@ -28,11 +27,7 @@
         "backgroundColor": "#fdc500",
         "foregroundImage": "./assets/images/favicon.png"
       },
-      "splash": {
-        "resizeMode": "contain",
-        "backgroundColor": "#fdc500",
-        "image": "./assets/images/splash-icon.png"
-      },
+
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "package": "com.SinaMadadi.Parachi",
@@ -40,13 +35,9 @@
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO",
         "android.permission.INTERNET",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE"
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ],
-      "blockedPermissions": [
-        "android.permission.SYSTEM_ALERT_WINDOW"
-      ]
+      "blockedPermissions": ["android.permission.SYSTEM_ALERT_WINDOW"]
     },
     "web": {
       "output": "static",
@@ -81,9 +72,7 @@
           "iCloudContainerEnvironment": "Production"
         }
       ],
-      [
-        "expo-file-system"
-      ],
+      ["expo-file-system"],
       [
         "expo-build-properties",
         {
@@ -94,12 +83,7 @@
             "compileSdkVersion": 35,
             "enableProguardInReleaseBuilds": true,
             "enableShrinkResourcesInReleaseBuilds": true,
-            "buildArchs": [
-              "arm64-v8a",
-              "armeabi-v7a",
-              "x86",
-              "x86_64"
-            ],
+            "buildArchs": ["arm64-v8a", "armeabi-v7a", "x86", "x86_64"],
             "enableMinifyInReleaseBuilds": true
           },
           "ios": {
